@@ -2,10 +2,13 @@
 <html>
   <head>
     <title>框架测试</title>
-    <script type="text/javascript" src="../../src/core.js" data-custom="{net}" data-async="false"></script>
+    <script type="text/javascript" src="../../src/core.js" data-custom="net,dom" data-async="false"></script>
   </head>
   <body>
-    
-    net.query()
+    net.query('url', '', '').done(function() {
+      dom.insert();
+    }).faild(function() {
+      
+    });
   </body>
 </html>
