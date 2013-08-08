@@ -55,8 +55,10 @@
   _.loadModule = loadModule;
   
   var scripts = convertArray(document.scripts), bootstrap;
-  for(var script in scripts) {
-    console.log(script);
+  for(var i in scripts) {
+    var script = scripts[i];
+    
+    
   }
 
 })(this);
